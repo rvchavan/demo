@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+// import Home from "../Home";
+import Home from "./Home";
+import Profile from "./Profile";
 
 function App() {
+  const data = {
+    Fname: "Sid",
+    Lname: "Surwanshy",
+    company: "TKP",
+    dob: "20-10-1555",
+    age: "28",
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Home title={data} />
+      <Profile data="Ravi" />
+    </>
   );
 }
 
